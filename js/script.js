@@ -10,8 +10,8 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Assignment-4/sw.js", {
+    scope: "/ICS2O-Assignment-4/",
   })
 }
 
@@ -27,7 +27,7 @@ function myButtonClicked() {
   const messageAnswer = document.getElementById("message").value
   const pickUpOrDelivery = document.getElementById("pick-up-or-delivery").value
 
-  const basePrice = (size + falvour) * TAX
+  const basePrice = (size + flavour) * TAX
   const messageOnly = (size + flavour + message) * TAX
   const deliveryOnly = (size + flavour + delivery) * TAX
   const messageAndDelivery = (size + flavour + message + delivery) * TAX
