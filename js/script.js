@@ -27,10 +27,10 @@ function myButtonClicked() {
   const messageAnswer = document.getElementById("message").value
   const pickUpOrDelivery = document.getElementById("pick-up-or-delivery").value
 
-  const basePrice = (size + flavour) * TAX
-  const messageOnly = (size + flavour + message) * TAX
-  const deliveryOnly = (size + flavour + delivery) * TAX
-  const messageAndDelivery = (size + flavour + message + delivery) * TAX
+  const basePrice = ((size + flavour) * TAX)
+  const messageOnly = ((basePrice + message) * TAX)
+  const deliveryOnly = ((basePrice + delivery) * TAX)
+  const messageAndDelivery = ((basePrice + message + delivery) * TAX)
 
   if (messageAnswer == "yes" && pickUpOrDelivery == "delivery") {
     document.getElementById("total").innerHTML =
