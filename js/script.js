@@ -22,8 +22,8 @@ function myButtonClicked() {
   const TAX = 1.13
   const message = 3.99
   const delivery = 15
-  const size = document.getElementById("size").value
-  const flavour = document.getElementById("flavour").value
+  const size = parseFloat(document.getElementById("size").value)
+  const flavour = parseFloat(document.getElementById("flavour").value)
   const messageAnswer = document.getElementById("message").value
   const pickUpOrDelivery = document.getElementById("pick-up-or-delivery").value
 
