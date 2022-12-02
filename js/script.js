@@ -20,8 +20,6 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked() {
   const TAX = 1.13
-  const message = 3.99
-  const delivery = 15
   const size = document.getElementById("size").value
   const flavour = document.getElementById("flavour").value
   const message = document.getElementById("message").value
