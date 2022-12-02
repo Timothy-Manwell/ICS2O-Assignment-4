@@ -34,15 +34,15 @@ function myButtonClicked() {
 
   if (messageAnswer == "yes" && pickUpOrDelivery == "delivery") {
     document.getElementById("total").innerHTML =
-      "Your total is: $" + messageAndDelivery + "."
+      "Your total is: $" + messageAndDelivery.toFixed(2) + "."
   } else if (messageAnswer == "no" && pickUpOrDelivery == "delivery") {
     document.getElementById("total").innerHTML =
-      "Your total is: $" + deliveryOnly + "."
+      "Your total is: $" + deliveryOnly.toFixed(2) + "."
   } else if (messageAnswer == "yes" && pickUpOrDelivery == "pick") {
     document.getElementById("total").innerHTML =
-      "Your total is: $" + messageOnly + "."
+      "Your total is: $" + messageOnly.toFixed(2) + "."
   } else {
     document.getElementById("total").innerHTML =
-      "Your total is: $" + basePrice + "."
+      "Your total is: $" + basePrice.toFixed(2) + "."
   }
 }
