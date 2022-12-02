@@ -35,15 +35,15 @@ function myButtonClicked() {
 
   if (messageAnswer == "yes" && pickUpOrDelivery == "delivery") {
     document.getElementById("total").innerHTML =
-      "Your total is: $" + messageAndDelivery.toFixed(2) + "."
+      "Your total is: $" + messageAndDelivery.toFixed(2) + " including tax."
   } else if (messageAnswer == "no" && pickUpOrDelivery == "delivery") {
     document.getElementById("total").innerHTML =
-      "Your total is: $" + deliveryOnly.toFixed(2) + "."
+      "Your total is: $" + deliveryOnly.toFixed(2) + " including tax."
   } else if (messageAnswer == "yes" && pickUpOrDelivery == "pick") {
     document.getElementById("total").innerHTML =
-      "Your total is: $" + messageOnly.toFixed(2) + "."
+      "Your total is: $" + messageOnly.toFixed(2) + " including tax."
   } else {
     document.getElementById("total").innerHTML =
-      "Your total is: $" + basePrice.toFixed(2) + "."
+      "Your total is: $" + basePrice.toFixed(2) + " including tax."
   }
 }
