@@ -27,7 +27,7 @@ function myButtonClicked() {
   const messageAnswer = document.getElementById("message").value
   const pickUpOrDelivery = document.getElementById("pick-up-or-delivery").value
 
-  const basePriceNoTAX = (size + flavour)
+  const basePriceNoTAX = size + flavour
   const basePrice = (size + flavour) * TAX
   const messageOnly = (basePriceNoTAX + message) * TAX
   const deliveryOnly = (basePriceNoTAX + delivery) * TAX
