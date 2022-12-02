@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
- function myButtonClicked() {
+function myButtonClicked() {
   const TAX = 1.13
   const message = 3.99
   const delivery = 15
@@ -32,13 +32,17 @@ if (navigator.serviceWorker) {
   const deliveryOnly = (size + flavour + delivery) * TAX
   const messageAndDelivery = (size + flavour + message + delivery) * TAX
 
-  if (message == "yes" && pickUpOrDelivery == "delivery"){
-    document.getElementById("total").innerHTML = "Your total is: $" + messageAndDelivery + "." 
-  } else if (message == "no" && pickUpOrDelivery == "delivery"){
-    document.getElementById("total").innerHTML = "Your total is: $" + deliveryOnly + "."
-  } else if (message == "yes" && pickUpOrDelivery == "pick"){
-    document.getElementById("total").innerHTML = "Your total is: $" + messageOnly + "."
-  } else{
-    document.getElementById("total").innerHTML = "Your total is: $" + basePrice + "."
+  if (message == "yes" && pickUpOrDelivery == "delivery") {
+    document.getElementById("total").innerHTML =
+      "Your total is: $" + messageAndDelivery + "."
+  } else if (message == "no" && pickUpOrDelivery == "delivery") {
+    document.getElementById("total").innerHTML =
+      "Your total is: $" + deliveryOnly + "."
+  } else if (message == "yes" && pickUpOrDelivery == "pick") {
+    document.getElementById("total").innerHTML =
+      "Your total is: $" + messageOnly + "."
+  } else {
+    document.getElementById("total").innerHTML =
+      "Your total is: $" + basePrice + "."
   }
 }
