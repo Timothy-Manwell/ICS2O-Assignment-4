@@ -32,7 +32,7 @@ function myButtonClicked() {
   const deliveryOnly = (size + flavour + delivery) * TAX
   const messageAndDelivery = (size + flavour + message + delivery) * TAX
 
-  if (messmessageAnswerage == "yes" && pickUpOrDelivery == "delivery") {
+  if (messageAnswer == "yes" && pickUpOrDelivery == "delivery") {
     document.getElementById("total").innerHTML =
       "Your total is: $" + messageAndDelivery + "."
   } else if (messageAnswer == "no" && pickUpOrDelivery == "delivery") {
